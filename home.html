@@ -10,7 +10,7 @@
 
 <body>
     <img class="floatingIsland" src="./images/floatingIsland.png" alt="iPhone floating island">
-    <a  href="./badges.html"><img id="trophyIcon" src="./images/trophyIcon.png"></a>
+    <a href="./badges.html"><img id="trophyIcon" src="./images/trophyIcon.png"></a>
     <div class="dustBunny">
         <img src="./images/dustBunny.png" alt="an illustration of a dust bunny">
         <div id="dirtyCleanBar">
@@ -21,15 +21,15 @@
         <div id="dirtySliderHorizontal"></div>
     </div>
     <section class="streakPoints">
-        <div class="streakPointsContainer">
+        <div class="streakPointsContainerOne">
             <div class="streakPointsTop">
-                <p>streak</p>
+                <p>Streak</p>
             </div>
             <div class="streakPointsBottom">
                 <h2>1 Day</h2>
             </div>
         </div>
-        <div class="streakPointsContainer">
+        <div class="streakPointsContainerTwo">
             <div class="streakPointsTop">
                 <p>Points</p>
             </div>
@@ -40,62 +40,132 @@
     </section>
     <section class="roomsHomepage">
         <a href="#">
-            <h2>Rooms</h2>
+            <h1 class="rooms room">Rooms</h1>
         </a>
         <div class="roomIcons">
-            <a href="#">
-                <div class="roomContainer">
-                    <h1>Bedroom</h1>
-                    <div class="percentCircle"></div>
+            <a href="./rooms.html">
+                <div class="roomContainer bedroom">
+                    <h6 class="rooms">Bedroom</h6>
+                    <div class="percentCircle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+
+                                    <stop offset="0%" stop- color="#DA22FF" />
+
+                                    <stop offset="100%" stop- color="#9733EE" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle2" cx="80" cy="80" r="32" stroke-linecap="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+
+                                    <stop offset="0%" stop- color="#DA22FF" />
+
+                                    <stop offset="100%" stop- color="#9733EE" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="32" stroke-linecap="round" />
+                        </svg>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="roomContainer">
-                    <h1>Living Room</h1>
-                    <div class="percentCircle"></div>
+                <div class="roomContainer livingroom">
+                    <h6 class="rooms">Living Room</h6>
+                    <div class="percentCircle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    40%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+
+                                    <stop offset="0%" stop- color="#DA22FF" />
+
+                                    <stop offset="100%" stop- color="#9733EE" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle2" cx="80" cy="80" r="32" stroke-linecap="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+
+                                    <stop offset="0%" stop- color="#DA22FF" />
+
+                                    <stop offset="100%" stop- color="#9733EE" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle id="circle" cx="80" cy="80" r="32" stroke-linecap="round" />
+                        </svg>
+                        
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="roomContainer">
-                    <img src=".." alt="plus sign">
+                <div class="roomContainer plus">
+                    <img src="./images/plus.png" alt="plus sign">
                 </div>
             </a>
         </div>
     </section>
 
     <section class="todaysTasks">
-        <h2>Today's Tasks</h2>
+        <h2>Today's Quick Tasks</h2>
         <div class="checkItem">
-            <div class="checkBox"></div>
-            <p>Wipe Countertops</p>
+            <div>
+                <input type="checkbox" id="Wipe Countertops" name="interest" value="coding" />
+                <label for="coding">Make the Bed</label>
+              </div>
+            <div class="roomIcon bedroomIcon"></div>
         </div>
         <div class="checkItem">
-            <div class="checkBox"></div>
-            <p>Wash Dishes</p>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music">Vacuum</label>
+              </div>
+            <div class="roomIcon livingroomIcon"></div>
         </div>
         <div class="checkItem">
-            <div class="checkBox"></div>
-            <p>Dust</p>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music">Dust</label>
+              </div>
+            <div class="roomIcon livingroomIcon"></div>
         </div>
     </section>
 
     <section class="navBar">
-        <a href="#">
-            <div class="homeIcon navIcon"></div>
-        </a>
-        <a href="#">
-            <div class="checkIcon navIcon"></div>
-        </a>
-        <a href="#">
-            <div class="diceIcon navIcon"></div>
-        </a>
-        <a href="#">
-            <div class="timerIcon navIcon"></div>
-        </a>
-        
+        <div class="innerNavBar">
+        <div class="diceIcon navIcon"></div>
+        <div class="timerIcon navIcon"></div>
+        <div class="homeIcon navIcon"></div>
+        <div class="tasksIcon navIcon"></div>
+        <div class="profileIcon2 navIcon"></div>
+    </div>
     </section>
 
     <div class="whiteBox"></div>
+    <div class="whiteBox2"></div>
 
 
 </body>
